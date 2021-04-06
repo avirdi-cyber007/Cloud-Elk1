@@ -1,4 +1,5 @@
-Step by step process to transfer files from inside docker container to the local / home laptop file system
+Step by step process to transfer files from inside docker container to the local / homelaptop file system
+(screenshots of the work are in the images folder)
 
 STEP 1: Transfer the files from inside the docker container (you need to ensure that the docker container
 is running and note that you would need to open at least two gitbash terminals to execute the commands) to the 
