@@ -1,0 +1,216 @@
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project
+$ ls
+ansible/  Diagrams/  Linux/  Readme.docx
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project
+$ git clone https://github.com/avirdi-cyber007/Cloud-Elk1.git
+Cloning into 'Cloud-Elk1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project
+$ ls
+ansible/  Cloud-Elk1/  Diagrams/  Linux/  Readme.docx
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project
+$ code .
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project
+$ ls
+'~$Readme.docx'   ansible/   Cloud-Elk1/   Diagrams/   Linux/   Readme.docx
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project
+$ cd Cloud-Elk1/
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git add .
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git commit -m "First commit"
+[main 3592c44] First commit
+ 1 file changed, 144 insertions(+), 2 deletions(-)
+ rewrite README.md (100%)
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 3.57 KiB | 1.79 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/avirdi-cyber007/Cloud-Elk1.git
+   c13c395..3592c44  main -> main
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ ls
+Images/  README.md
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git add .
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Images/Amar_finished-elk-diagram.PNG
+        modified:   README.md
+
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git commit -m "First commit"
+[main 6bf028f] First commit
+ 2 files changed, 1 insertion(+), 3 deletions(-)
+ create mode 100644 Images/Amar_finished-elk-diagram.PNG
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 89.20 KiB | 11.15 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/avirdi-cyber007/Cloud-Elk1.git
+   3592c44..6bf028f  main -> main
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git config --global user.name "FIRST_NAME LAST_NAME"
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git config --global user.name "Amar Virdi"
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git config --global user.email "MY_NAME@example.com"
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git config --global user.email "avirdi.cyber007@gmail.com"
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git add .
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git commit -m "second commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass'
+Username for 'https://github.com': avirdi-cyber007
+Everything up-to-date
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git config --global user.name "avirdi-cyber007"
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git add .
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git commit -m "third commit"
+[main 4a839a3] third commit
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ rename Images/{Amar_finished-elk-diagram.PNG => elk-diagram.png} (100%)
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 358 bytes | 179.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/avirdi-cyber007/Cloud-Elk1.git
+   6bf028f..4a839a3  main -> main
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git add .
+warning: LF will be replaced by CRLF in ansible/1. ansible.cfg.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in ansible/2. filebeat-config.yml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in ansible/3. install-elk.yml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in ansible/4. my-playbook.yml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in ansible/5. pentest.yml.
+The file will have its original line endings in your working directory
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git commit -m "forth commit"
+[main f741361] forth commit
+ 25 files changed, 2655 insertions(+)
+ create mode 100644 Diagrams/Amar-Finished-Cloud-Diagram.PNG
+ create mode 100644 Diagrams/Amar-finished-elk-diagram.drawio
+ create mode 100644 Diagrams/Amar_ELK_VNET.PNG
+ create mode 100644 Diagrams/Amar_Finished-Cloud-Diagram.drawio
+ create mode 100644 Diagrams/Amar_Kibana_Home.PNG
+ create mode 100644 Diagrams/Amar_VM_ELK.PNG
+ create mode 100644 Diagrams/Amar_finished-elk-diagram.PNG
+ create mode 100644 Diagrams/kibana/1. Amar.PNG
+ create mode 100644 Diagrams/kibana/2-days.png
+ create mode 100644 Diagrams/kibana/2. Amar.PNG
+ create mode 100644 Diagrams/kibana/3. Amar.PNG
+ create mode 100644 Diagrams/kibana/4. Amar.PNG
+ create mode 100644 Diagrams/kibana/5. Amar.PNG
+ create mode 100644 Diagrams/kibana/6. Amar.PNG
+ create mode 100644 Diagrams/kibana/7. Amar.PNG
+ create mode 100644 Diagrams/kibana/8. Amar.PNG
+ create mode 100644 Diagrams/kibana/9. Amar.PNG
+ create mode 100644 Diagrams/metrics-kibana/CPU-Spike.png
+ create mode 100644 Linux/test.txt
+ create mode 100644 ansible/1. ansible.cfg
+ create mode 100644 ansible/2. filebeat-config.yml
+ create mode 100644 ansible/3. install-elk.yml
+ create mode 100644 ansible/4. my-playbook.yml
+ create mode 100644 ansible/5. pentest.yml
+ create mode 100644 ansible/Step by step process to transfer files from inside docker container to the local.docx
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (30/30), 4.20 MiB | 499.00 KiB/s, done.
+Total 30 (delta 0), reused 0 (delta 0)
+To https://github.com/avirdi-cyber007/Cloud-Elk1.git
+   4a839a3..f741361  main -> main
+
+aisvi@DESKTOP-LL5CAQ8 MINGW64 ~/Desktop/CODING/CYBERSECURITY/BOOTCAMP/Home Work_Submitted/Unit-13-Project-Elk Stack/Project/Cloud-Elk1 (main)
+$
