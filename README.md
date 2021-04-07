@@ -98,8 +98,12 @@ Ansible can automate IT environments whether they are hosted on traditional bare
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Install docker.io
+- install python3
+- Install Docker Module
+- Assign appropriate memory
+- Download and launch docker elk container
+- enable service docker on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -110,33 +114,50 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
-Web-1 and Web-2 are being monitored with private IP addresses 10.0.0.5 and 10.0.0.6 via the Load balancer which has a public IP as listed in the table. Web-1 and Web-2 are accessed through the LB.
+Web-1 and Web-2 are being monitored with private IP addresses 10.0.0.5 and 10.0.0.6 via the peer-to-peer networking.
 
 We have installed the following Beats on these machines:
 - _TODO: Specify which Beats you successfully installed_
+Filebeats and Metricbeats have been successfully installed
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
+Filebeat: (reference: https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html )
+Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+
+Metricbeat: (reference: https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-overview.html )
+Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
+- Copy the configuration_____ file to ansible docker container_____.
+- Update the configuration_____ file to include...IP of ELK VM
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 
+The playbook file is 
+
+
 - _Which file do you update to make Ansible run the playbook on a specific machine? 
+
+You update the configuration file
 
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 
+To specify which machine to install the ELK server on: we specify host: elk in the install-elk.yml file and include the private ip of the elk server in the hosts file under [elk]
+
+To install filebeat on: We specify host: webservers in the filebeat-playbook file. The ip of the web-1 and web-2 is included under [webwervers] in the hosts file.
+
+
 - _Which URL do you navigate to in order to check that the ELK server is running?
+
+Ip_address_of_ELK_VM(20.64.241.62):5601/app/kibana
 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-
 

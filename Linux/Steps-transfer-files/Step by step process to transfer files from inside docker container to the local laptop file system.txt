@@ -1,0 +1,21 @@
+Step by step process to transfer files from inside docker container to the local / laptop file system
+
+Step 1: Create directory inside ansible container where to hold files - say files directory:
+azureuser@RedTeamVM:~$ mkdir files
+
+Step 2: Transfer files from inside docker container from the /etc/ansible/ directory to files directory that we created above in the jumpbox
+azureuser@RedTeamVM:~$ sudo docker cp -a 3be0b3c2ca3c:/etc/ansible/ ./files
+
+(note: to copy past container value use sudo docker ps -a)
+
+Step 3: open gitbash from iside the directory of your home laptop that you want the files copied to
+
+Step4: Copy files from azure jumpbox to laptop by he following command from terminal opened in step 3 above
+
+$ scp -r -i ~/.ssh/jumpboxkey azureuser@13.90.102.36:/home/azureuser/files/ .
+
+
+
+
+
+
