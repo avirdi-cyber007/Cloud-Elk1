@@ -4,9 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![TODO: Update the path with the name of your diagram](Diagrams/elk-diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
-
-  - _TODO: Enter the playbook file._
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
 - Description of the Topology
@@ -107,8 +105,7 @@ The following screenshot displays the result of running `docker ps` after succes
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+This ELK server is configured to monitor the following machines: 
 Web-1 and Web-2 are being monitored with private IP addresses 10.0.0.5 and 10.0.0.6 via the peer-to-peer networking.
 
 We have installed the following Beats on these machines: Filebeats and Metricbeats have been successfully installed
@@ -133,11 +130,11 @@ The folders containing the required files are organized in the Ansible machine a
 
 ```
 etc # should already exist.
-----> ansible # should already exist.
----------> ansible.cfg # should already exist.
----------> hosts # should already exist.
----------> roles # this is a new directory that will contain your ansible playbooks.
---------------> files # this is a new directory that will contain the configuration files we pass to you.
+----> ansible # 
+---------> ansible.cfg  
+---------> hosts # 
+---------> roles # this is a new directory that will contain our ansible playbooks.
+--------------> files # this is a new directory that will contain the configuration files.
 ```
 ---
 
