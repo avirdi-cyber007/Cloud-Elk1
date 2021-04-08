@@ -1,0 +1,1 @@
+azureuser@RedTeamVM:~$ for i in `seq 1 15`; do wget -qO- 10.0.0.5 &> /dev/null; done

@@ -1,0 +1,1 @@
+azureuser@RedTeamVM:~$ for i in `seq 1 15`; do ssh -i ~/.ssh/id_rsa sysadmi@10.0.0.5; done
